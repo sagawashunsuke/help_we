@@ -1,0 +1,44 @@
+<%# <script type="text/javascript" src="header.js"></script> %>
+<%# CSS・・・assets/stylesheets/shared/header.css %>
+<header class="top-page-header">
+    <div class="main-header">
+      <div class="main-logo">
+            HelpWe!
+      </div>
+      <div class='nav'>
+        <ul class='right-lists'>
+
+            <li><%= link_to 'メンター', "", class: "mentor-list" %></li>
+            
+            <li><%= link_to 'チケット', "", class: "ticket-list" %></li>
+        </ul>
+            <%# <div class='search-bar-contents'> %>
+              <%# <form class="search-form" action="#"></form> %>
+          </div>
+
+
+
+
+      <% if user_signed_in? %>
+        <ul class='left-lists-ok'>
+          <li><%= link_to 'ログアウト', class: "logout" %></li>
+          <li><%= link_to 'ゲスト', class: "guest" %></li>
+          
+      <% else %>
+        <ul class='left-lists'>
+            <li><%= link_to 'ログイン', class: "login" %></li>
+            <li><%= link_to '新規登録', class: "sign-up" %></li>
+            <li><%= link_to 'ゲスト', class: "guest" %></li>
+        </ul>
+                <%# <a href="#"> %>
+      <% end %>
+        
+
+
+
+          <div class="cupon-present">
+            今なら無料登録で<br>「メンターチケット１枚」プレゼント！
+          </div>
+      </div>
+    </div>
+</header>

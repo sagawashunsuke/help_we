@@ -1,0 +1,247 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+<%# 画面上部の「即対応可能なメンター」帯部分 %>
+  <div class='title-contents'>
+    <h1 class='service-title'>
+      即対応可能なメンター
+    </h1>
+
+    <ul class='possible-mentors'>
+      <%# <%= link_to image_tag("cat.png", class:"google-btn"), "#" %>
+      <li class='mentor'></li>
+        <h2 class='exp-mentor'>
+          <span class='exp-mentor-text'>30代/男性/歴10年</span>
+            <%= image_tag "person.jpg", alt: "", id: "assets", class: "person-image", width: "150px" %>
+        </h2>
+        <p class='exp-mentor-description'>
+        現役エンジニア<br>言語　PHP/Javascript/Ruby
+        </p>
+      </li>
+          
+      <li class='mentor'></li>
+        <h2 class='exp-mentor'>
+          <span class='exp-mentor-text'>20代/男性/歴5年</span>
+            <%= image_tag "men.jpg", alt: "", id: "assets", class: "person-image", width: "150px" %>
+        </h2>
+        <p class='exp-mentor-description'>
+        現役フリーランス<br>言語　Rails/Phython/Go
+        </p>
+      </li>
+
+      <li class='mentor'></li>
+        <h2 class='exp-mentor'>
+          <span class='exp-mentor-text'>20代/女性/歴3年</span>
+            <%= image_tag "women.jpg", alt: "", id: "assets", class: "person-image", width: "150px" %>
+        </h2>
+        <p class='exp-mentor-description'>
+        現役Webデザイナー<br>言語　HTML/CSS/Javascript
+        </p>
+      </li>
+    </ul>
+  </div>
+<%# /画面上部の「即対応可能なメンター」帯部分  %>
+
+<%# 3つのサービス説明部分 %>
+  <div class='select-reason-contents'>
+    <h1 class='title'>
+      あなたの「分からない」を今すぐ解決できるプラットフォーム
+    </h1>
+    <ul class='exp-lists'>
+
+      <li class='list'>
+        <%# <%= image_tag "", class:"list-pict" %>
+        <h2 class='exp-list-text'>
+          <%= image_tag "business.png", alt: "", id: "assets", class: "hito-image", width: "150px" %>
+          <span class='exp-list-blue-text'>経験豊富なメンター</span>
+          
+        </h2>
+        <p class='exp-list-description'>
+          各言語のスペシャリストの中から<br>あなたの課題に最適なメンターを<br>見つけられます
+        </p>
+      </li>
+
+
+      <li class='list'>
+        <%# <%= image_tag "furima-intro02.png", class:"list-pict" %>
+        <h3 class='exp-list-text'>
+          <%= image_tag "run.png", alt: "", id: "assets", class: "hito-image", width: "150px" %>
+          <span class='exp-list-blue-text'>即対応可</span>
+          
+        </h3>
+        <p class='exp-list-description'>
+          今すぐ解決したい課題を<br>リアルタイムで解決できます
+        </p>
+      </li>
+
+
+      <li class='list'>
+        <%# <%= image_tag "furima-intro03.png", class:"list-pict" %>
+        <h3 class='exp-list-text'>
+          <%= image_tag "kippu.png", alt: "", id: "assets", class: "hito-image", width: "150px" %>
+          <span class='exp-list-blue-text'>チケット制</span>
+        </h3>
+        <p class='exp-list-description'>
+          業界最安値で優秀なメンターの<br>「10分」をチケット1枚と交換する<br>ことができます
+        </p>
+      </li>
+
+    </ul>
+  </div>
+<%# /3つのサービス説明部分 %>
+
+  
+<%# /チケットについて %>
+  <div class='ticket-contents'>
+    <h1 class='ticket-title'>
+      メンターチケット
+    </h1>
+    <p class='exp-ticket'>
+      メンターチケットとは1枚で10分間の通話サービスを受けられるチケットのことです<br>
+      「好きなときに、好きなだけ」メンターとの通話をお楽しみ頂けます
+    </p>
+
+    <div class='deal-ticket'>
+      <h2 class='ticket-sub'>
+        メンターチケットはまとめ買いでさらにお得！
+      </h2>
+      <p class='exp-caution-ticket'>
+        最大で1枚あたり約770円でお求め頂けます
+      </p>
+      <p class='caution-ticket'>
+        ※1枚からでも購入できます
+      </p>
+    </div>
+
+    <div class='select-ticket-contents'>
+      <ul class='buy-tickets'>
+        <%# <%= link_to image_tag("cat.png", class:"google-btn"), "#" %>
+        <li class='ticket'></li>
+
+          <a href="" class="btn btn-coupon"><i class="fas fa-cut fa-position-top"></i><span>¥1000</span><br>購入する！<br>(1枚)
+          <i class="fas fa-cut fa-position-bottom"></i></a>
+          
+          <h2 class='detail-ticket'>
+            <p class='detail-ticket-text'></p>
+          </h2>
+        </li>
+
+
+        <li class='ticket'></li>
+
+          <a href="" class="btn btn-coupon"><i class="fas fa-cut fa-position-top"></i><span>¥5000</span><br>購入する！<br>(6枚)
+          <i class="fas fa-cut fa-position-bottom"></i></a>
+
+          <h2 class='detail-ticket'>
+            <span class='detail-ticket-text'></span>
+          </h2>
+          
+        </li>
+
+
+        <li class='ticket'></li>
+
+          <a href="" class="btn btn-coupon"><i class="fas fa-cut fa-position-top"></i><span>¥10000</span><br>購入する！<br>(13枚)
+          <i class="fas fa-cut fa-position-bottom"></i></a>
+
+          <h2 class='detail-ticket'>
+            <span class='detail-ticket-text'></span>
+          </h2>
+          
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<%# /チケットについて %>
+
+
+<%# /メンター一覧%>
+<%# <a id="example">これは見出しです。 %>
+  <div class='select-mentor-hyoji'>
+    <h1 class='title-t'>
+       メンター 一覧
+    </h1>
+    <ul class='htmlcss-mentor'>
+
+      <li class='htmlcss-lists'>
+        <%# <%= image_tag "", class:"list-pict" %>
+        <h2 class='detail-list-mentor'>
+          <p class='exp-list-t-text'>HTML•CSS</p>
+
+            <%# <%= image_tag "htmlcss.png", alt: "", id: "assets", class: "lang-image", width: "150px" %>
+            
+            <%= image_tag "htmlcss.png", alt: "", id: "assets", class: "lang-image", width: "150px" %>
+        </h2>
+          
+      </li>
+          
+
+      <li class='htmlcss-lists'>
+        <%# <%= image_tag "", class:"list-pict" %>
+        <h2 class='detail-list-mentor'>
+          <p class='exp-list-t-text'>Ruby</p>
+            <%= image_tag "ruby.png", alt: "", id: "assets", class: "lang-image", width: "150px" %>
+        </h2>
+      </li>
+
+      
+      <li class='htmlcss-lists'>
+        <%# <%= image_tag "", class:"list-pict" %>
+        <h2 class='detail-list-mentor'>
+          <p class='exp-list-t-text'>Javascript</p>
+            <%= image_tag "javascript.png", alt: "", id: "assets", class: "lang-image", width: "150px" %>
+        </h2>
+      </li>
+
+
+      <li class='htmlcss-lists'>
+        <%# <%= image_tag "", class:"list-pict" %>
+        <h2 class='detail-list-mentor'>
+          <p class='exp-list-t-text'>PHP</p>
+            <%= image_tag "php.png", alt: "", id: "assets", class: "lang-image", width: "150px" %>
+        </h2>
+      </li>
+
+
+
+      <li class='htmlcss-lists'>
+        <%# <%= image_tag "", class:"list-pict" %>
+        <h2 class='detail-list-mentor'>
+          <p class='exp-list-t-text'>Python</p>
+            <%= image_tag "python.png", alt: "", id: "assets", class: "lang-image", width: "150px" %>
+        </h2>
+      </li>
+
+
+      <li class='htmlcss-lists'>
+        <%# <%= image_tag "", class:"list-pict" %>
+        <h2 class='detail-list-mentor'>
+          <p class='exp-list-t-text'>SQL</p>
+            <%= image_tag "sql.jpeg", alt: "", id: "assets", class: "lang-image", width: "150px" %>
+        </h2>
+      </li>
+
+
+      <li class='htmlcss-lists'>
+         <%# <%= image_tag "", class:"list-pict" %>
+        <h2 class='detail-list-mentor'>
+          <p class='exp-list-t-text'>GO</p>
+            <%= image_tag "go.png", alt: "", id: "assets", class: "lang-image", width: "130px" %>
+        </h2>
+      </li>
+
+
+
+    </ul>
+  </div>
+
+<%# /メンター一覧%>
+
+<div class='purchase-btn'>
+  <a href="">
+    <%= image_tag 'sign-up.png' , size: '185x90' ,class: "purchase-btn-icon" %>
+  </a>
+</div>
+
+<%= render "shared/footer" %>

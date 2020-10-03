@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  min-width: 150px;
+  text-decoration: none;
+}
+
+.top-page-header {
+  position: relative;
+  padding: 4px 9px;
+  height: 65px;
+  background: #ffe000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 1px solid #FFFFFF;
+}
+
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.main-logo {
+  color: #000;
+  font-size: 40px;
+  font-family: YakuHanJP, 'Noto Sans Japanese', sans-serif;
+}
+
+.nav {
+  font-size: 18px;
+  display: flex;
+  padding: 1vh 0;
+  text-decoration: none;
+}
+
+.right-lists {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+.left-lists {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
+
+.mentor-list {
+  color: #000;
+  text-decoration: none;
+  font-size: 25px;
+  position: absolute;
+  top: 15px;
+}
+
+.ticket-list {
+  color: #000;
+  text-decoration: none;
+  font-size: 25px;
+  position: absolute;
+  top: 15px;
+}
+
+.login {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.sign-up {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.guest {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.cupon-present {
+  padding: 8px;
+  text-align: center;
+  background: #ff4f02;
+  border: 2px solid #FFFFFF;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: #fff;
+  font-size: 11px;
+} 
+
+
+
+
+/* .mentor-list { */
+  /* text-decoration: none;
+  margin-right: 3vw;
+  color: #333333; */
+/* } 
+
+
+
+
+
+.search-form>.input-box {
+  /* width: 100%;
+  height: 5vh;
+  padding-left: 10px; */
+/* } 
+
+.search-button {
+  /* width: 5vh;
+  border: 0;
+  cursor: pointer;
+  background-color: #3ccace;
+  padding: 8px; */
+/* } 
+
+.search-icon {
+  /* width: 100%; */
+/* } 
+
+
+  /* text-align: center;
+    border-radius: 20px;
+    border: 2px solid #13b1c0;
+    color: #13b1c0;
+    text-decoration: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 700; */
+/* }
+
+
+
+.category-list {
+  /* text-decoration: none;
+  margin-right: 3vw;
+  color: #333333; */
+/* }
+
+.brand-list { */
+  /* text-decoration: none;
+  color: #333333; */
+/* }
+
+
+
+
+.user-nickname {
+  /* text-decoration: none;
+  margin-right: 3vw;
+  color: #333333;
+  font-weight: bold; */
+/* } 
+
+
+.logout {
+  /* text-decoration: none;
+  color: #333333; */
+/* } 
+
+.login {
+  /* text-decoration: none;
+  line-height: 32px;
+  margin-right: 3vw;
+  color: #333333; */
+/* } 
+
+.sign-up {
+  /* text-decoration: none;
+  color: #333333; */
+/* } 
+
