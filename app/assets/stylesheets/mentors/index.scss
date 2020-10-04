@@ -35,6 +35,7 @@
  font-size: 120%;
  position: relative;
  bottom: 50px;
+ right: 2px;
 }
 
 .exp-mentor-text {
@@ -43,20 +44,26 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 25px;
+  white-space: nowrap;
+  position: relative;
+  left: 9px;
 }
 
 .person-image {
   height: 190px;
   position: relative;
   top: 10px;
+  right: 20px;
 }
 
 .exp-mentor-description {
   position: relative;
   top: 120px;
-  right: 150px;
+  right: 190px;
   font-size: 2vh;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 // .google-btn {
@@ -86,7 +93,7 @@
 
 .select-reason-contents>.title::after {
   content: '';
-  width: 730px;
+  width: 838px;
   height: 4px;
   background-color: #f89174;
   position: absolute;
@@ -189,7 +196,7 @@
   line-height: 90px;
   text-align: center;
   color: #ff4f02;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: bold;
   background: #ffcc75;
   border-radius: 50%;
@@ -356,3 +363,128 @@ a.btn-coupon span {
   right: 60px;
   bottom: 60px;
 }
+
+
+
+
+
+//新規登録画面////////////////////
+
+
+body,
+html {
+  height: 100%;
+  // background-color: gray;
+}
+
+body {
+  padding-top: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
+  line-height: 1.57;
+  letter-spacing: 0.15em;
+  font-size: 18px;
+  color: #666;
+  font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+a:hover {
+  color: #CC66FF;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.serif,
+div.contents.row div.content_post p {
+  font-family: 'ほのか明朝', serif;
+}
+
+.ultra {
+  font-size: 2em !important;
+}
+
+::selection {
+  background: #D8D8D8;
+}
+
+.transition,
+a,
+form input[type="submit"] {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+div.contents.row h2 {
+  margin: 20px 0;
+  padding: 0;
+  font-weight: normal;
+  width: 10%;
+
+
+
+  position: relative;
+  left:510px;
+}
+
+div.contents.row .new_user {
+  font-family: "游ゴシック", "YuGothic";
+}
+
+form input,
+form textarea {
+  width: 50%;
+  margin: 5px 0 15px;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  font-family: "游ゴシック", "YuGothic";
+
+  position: relative;
+  left:280px;
+}
+
+form input[type="submit"] {
+  background-color: #ff4f02;
+  border-radius: 20px;
+  color: #fff;
+  border: 0;
+  font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #CC66FF;
+}
+
+.container {
+  margin: 20px 0;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(41, 41, 41, 0.2);
+  background-color: white;
+  box-sizing: border-box;
+}
+

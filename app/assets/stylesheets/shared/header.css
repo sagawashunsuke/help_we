@@ -16,6 +16,8 @@
 }
 
 
+
+
 .main-header {
   display: flex;
   justify-content: space-between;
@@ -23,10 +25,22 @@
 
 
 
+
+
+.helpwe-icon{
+  width: 10vw;
+  margin-right: 10vw;
+  position: relative;
+  bottom: 10px;
+}
+
+
+
+
 .main-logo {
-  color: #000;
+  /* color: #000;
   font-size: 40px;
-  font-family: YakuHanJP, 'Noto Sans Japanese', sans-serif;
+  font-family: YakuHanJP, 'Noto Sans Japanese', sans-serif; */
 }
 
 .nav {
@@ -40,12 +54,17 @@
   display: flex;
   list-style: none;
   align-items: flex-end;
+  position: relative;
+  right: 50px;
+
 }
 
-.left-lists {
+.left-lists-ok {
   display: flex;
   list-style: none;
   align-items: flex-end;
+  position: relative;
+  bottom: 25px;
 }
 
 
@@ -85,14 +104,15 @@
 
 
 .cupon-present {
-  padding: 8px;
+  padding: 10px;
   text-align: center;
   background: #ff4f02;
   border: 2px solid #FFFFFF;
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #fff;
-  font-size: 11px;
+  font-size: 10px;
+  height: 60px;
 } 
 
 
