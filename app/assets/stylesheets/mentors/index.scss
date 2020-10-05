@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 //即対応可能なメンター部分//
 
 .title-contents {
@@ -31,7 +35,7 @@
 .exp-mentor {
  width: 200px;
  height: 220px;
- background-color: lightgreen;
+ background-color: #AEFFBD;
  font-size: 120%;
  position: relative;
  bottom: 50px;

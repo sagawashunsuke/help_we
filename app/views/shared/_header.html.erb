@@ -5,8 +5,8 @@
       </div>
       <div class='nav'>
         <ul class='right-lists'>
-            <li><%= link_to 'メンター', "", class: "mentor-list" %></li>
-            <li><%= link_to 'チケット', "", class: "ticket-list" %></li>
+            <li><%= link_to 'メンター', "#mentor", class: "mentor-list" %></li>
+            <li><%= link_to 'チケット', "#mentor-ticket", class: "ticket-list" %></li>
         </ul>
       </div>
 
@@ -24,7 +24,10 @@
       <% end %>
         
           <div class="cupon-present">
-            今なら無料登録で<br>「メンターチケット１枚」プレゼント！
+            <a href="/users/sign_up">今なら無料登録で<br>「メンターチケット１枚」プレゼント！</a>
           </div>
     </div>
 </header>
+
+
+<%# <a href=new_user_registration_path>今なら無料登録で<br>「メンターチケット１枚」プレゼント！</a> %>
