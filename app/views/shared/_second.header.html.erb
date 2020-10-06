@@ -5,19 +5,23 @@
       </div>
       <div class='nav'>
         <ul class='right-lists'>
-            <li><%= link_to 'メンター', root_path, class: "mentor-list" %></li>
-            <li><%= link_to 'チケット', root_path, class: "ticket-list" %></li>
+            <li><%= link_to 'メンター', root_path, class: "mentor-list2" %></li>
+            <li><%= link_to 'チケット', root_path, class: "ticket-list2" %></li>
         </ul>
       </div>
 
       
 
-        <div class='left-lists'>
-            <%= link_to 'ログイン', new_user_session_path, class: "login" %>
-        </div>
+      <div class='left-lists'>
+        <% if user_signed_in? %>
+          <%= link_to current_user.name, "#", class: "user-name"  %>
+          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
+        <% else %>
+          <%= link_to 'ログイン', new_user_session_path, class: "login2" %>
         
-          <div class="cupon-present">
+          <div class="cupon-present3">
             今なら無料登録で<br>「メンターチケット１枚」プレゼント！
           </div>
-    </div>
+        <% end %>
+      </div>
 </header>
