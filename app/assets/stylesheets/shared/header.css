@@ -89,11 +89,13 @@
   font-size: 20px;
   position: relative;
   top: 30px;
+  left: 20px;
 }
 
 .logout {
   position: relative;
   top: 26px;
+  left:50px;
 }
 
 .sign-up {
@@ -102,7 +104,15 @@
   font-size: 20px;
   position: relative;
   top: 30px;
-  left: 20px;
+  left: 40px;
+}
+
+.mentor-sign-up {
+  position: relative;
+  bottom: 5px;
+
+
+
 }
 
 .guest {
@@ -179,3 +189,20 @@
   bottom: 22px;
   right: 110px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

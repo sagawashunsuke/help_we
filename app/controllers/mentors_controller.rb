@@ -1,5 +1,5 @@
 class MentorsController < ApplicationController
-
+  before_action :authenticate_user!, only:[:new, :create, :edit, :update, :destroy]
   
 
   def index
@@ -17,12 +17,44 @@ class MentorsController < ApplicationController
     # else
     #   render :new
     # end
+    Mentor.create(mentor_params)
+    redirect_to new_mentor_path
   end
+
+
+  def show
+    # @mentor = Mentor.find(params[:id])
+
+  end
+
+  def edit
+    @mentor = Mentor.find(params[:id])
+  end
+
+  def update
+    if @mentor.update(mentor_params)
+      redirect_to root_path(@mentor) 
+    else
+      render root_path
+    end
+  end
+
+  def destroy
+    if current_user.id == @mentor.user_id
+       if @mentor.destroy
+          redirect_to root_path
+       else
+         render :show
+       end
+    else
+      redirect_to root_path
+    end
+  end
+
 
   private
 
-  def user_params
-    params.require(:mentor).permit(:name, :email, :encrypted_password, :career, :skill_id).merge(user_id: current_user.id)
-
+  def mentor_params
+    params.require(:mentor).permit(:name, :email, :career, :profile, :skill_id, :image)
   end
 end

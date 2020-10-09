@@ -11,10 +11,18 @@
         </ul>
       </div>
 
+      
       <% if user_signed_in? %>
         <div class='left-lists-ok'>
-          <%= link_to current_user.name, "#", class: "sign-up" %>
-          <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
+            <span><%= current_user.name %>
+              <ul class="sign-up">
+                <li>
+                  <%= link_to current_user.name, "/mentors/new" %>
+                </li>
+              </ul>
+            </span>
+
+            <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %>
         </div>
       <% else %>
 

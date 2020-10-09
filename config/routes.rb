@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   root to:"mentors#index"
 
   resources :mentors do
-    resources :orders
+      resources :orders
   end
 end
